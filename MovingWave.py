@@ -32,6 +32,6 @@ class MovingWave(Scene):
     def get_sine_wave(self, dx=0):
         return FunctionGraph(
             lambda x: np.sin(x + dx),
-            x_range=[self.x_min, self.x_max]  # ✅ Correct usage
+            x_range=[self.x_min, self.x_max]
         )
 
